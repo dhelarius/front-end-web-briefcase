@@ -1,0 +1,28 @@
+
+hr {
+  border-style: solid;
+  color: hsl(240, 5%, 91%)
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.container {
+  width: 60%;
+  height: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.information-container {
+  width: 420px;
+  height: auto;
+}
+
+.question h4 {
+  margin-bottom: 0;
+}
+
+.answer {
+  margin: 0;
+}
