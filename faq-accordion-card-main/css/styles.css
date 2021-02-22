@@ -1,28 +1,57 @@
-
-hr {
-  border-style: solid;
-  color: hsl(240, 5%, 91%)
+body {
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 955px;
+  font-size: 12px;
 }
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 .container {
+  background-color: white;
   width: 60%;
-  height: 40%;
-  margin-left: auto;
-  margin-right: auto;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 25px;
 }
 
 .information-container {
-  width: 420px;
+  width: 35%;
   height: auto;
+  padding: 60px 100px 80px 0;
+}
+
+.faq {
+  margin-bottom: 30px;
+}
+
+.question {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.pattern {
+  position: absolute;
+  left: -40px;
+  z-index: 2;
+}
+
+.woman {
+  position: absolute;
+  z-index: 3;
+}
+
+.box {
+  position: absolute;
+  z-index: 4;
 }
 
 .question h4 {
-  margin-bottom: 0;
-}
-
-.answer {
   margin: 0;
 }
