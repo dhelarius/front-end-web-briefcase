@@ -1,22 +1,27 @@
+
 body {
   background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 955px;
+  min-height: 100vh;
+  padding: 0;
   font-size: 12px;
+  font-family: 'Kumbh Sans', sans-serif;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+p {
+  color: hsl(240, 6%, 50%);
+}
 
 .container {
   background-color: white;
-  width: 60%;
+  width: 70%;
   height: auto;
   display: flex;
   justify-content: flex-end;
   border-radius: 25px;
+  margin: auto;
 }
 
 .information-container {
@@ -36,22 +41,44 @@ body {
   margin-top: 15px;
 }
 
+.question h4 {
+  color: hsl(237, 12%, 33%);
+  margin: 0;
+}
+
+.faq {
+  color: hsl(237, 12%, 33%);
+  font-size: 32px;
+}
+
 .pattern {
   position: absolute;
-  left: -40px;
+  left: -80px;
+  z-index: 1;
+  width: auto;
+  height: 100vh;
+}
+
+figure {
+  position: absolute;
+  margin: 0;
+  overflow: hidden;
+  left: 15.35%;
   z-index: 2;
 }
 
 .woman {
-  position: absolute;
-  z-index: 3;
+  display: block;
+  margin-left: -80px;
 }
 
 .box {
   position: absolute;
-  z-index: 4;
+  left: 7.5%;
+  z-index: 3;
+  margin-top: 45px;
 }
 
-.question h4 {
-  margin: 0;
+@media (min-width: 375px) {
+
 }
