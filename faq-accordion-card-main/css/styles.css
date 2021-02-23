@@ -63,7 +63,7 @@ figure {
   position: absolute;
   margin: 0;
   overflow: hidden;
-  left: 15.35%;
+  left: 15.28%;
   z-index: 2;
 }
 
@@ -74,7 +74,7 @@ figure {
 
 .box {
   position: absolute;
-  left: 7.5%;
+  left: 8.5%;
   z-index: 3;
   margin-top: 45px;
 }
