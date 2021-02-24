@@ -57,11 +57,12 @@ body {
   z-index: 2;
   margin: 0;
   overflow: hidden;
+  height: 100%;
 }
 
 .pattern {
   display: block;
-  margin-top: -12%;
+  margin-top: -24%;
   margin-left: -60%;
 }
 
@@ -80,8 +81,8 @@ body {
 .box {
   position: absolute;
   z-index: 4;
-  margin-top: 8.5%;
-  margin-left: -11.6%;
+  margin-left: -8.1rem;
+  margin-top: 5.8rem;
 }
 
 @media (max-width: 375px) {
@@ -131,12 +132,11 @@ body {
   }
 
   .box {
+    position: absolute;
     width: 26%;
     height: auto;
-    display: flex;
-    align-self: center;
-    margin-left: 15%;
-    margin-bottom: 6%;
+    margin-left: 3.2rem;
+    margin-bottom: 4.9rem;
   }
 
   .faq {
