@@ -10,28 +10,28 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
 }
 
-p {
-  color: hsl(240, 6%, 50%);
-}
-
-.container {
+.middle-container {
   background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 70%;
   height: auto;
-  display: flex;
-  justify-content: flex-end;
   border-radius: 25px;
   margin: auto;
+  position: absolute;
+  z-index: 1;
+}
+
+.images-container {
+  display: flex;
+  align-items: center;
 }
 
 .information-container {
+  padding: 60px 100px 80px 0;
   width: 35%;
   height: auto;
-  padding: 60px 100px 80px 0;
-}
-
-.faq {
-  margin-bottom: 30px;
 }
 
 .question {
@@ -49,36 +49,98 @@ p {
 .faq {
   color: hsl(237, 12%, 33%);
   font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.pattern-figure {
+  position: absolute;
+  z-index: 2;
+  margin: 0;
+  overflow: hidden;
 }
 
 .pattern {
-  position: absolute;
-  left: -80px;
-  z-index: 1;
-  width: auto;
-  height: 100vh;
+  display: block;
+  margin-top: -12%;
+  margin-left: -60%;
 }
 
-figure {
+.woman-figure {
   position: absolute;
   margin: 0;
   overflow: hidden;
-  left: 15.28%;
-  z-index: 2;
+  z-index: 3;
 }
 
 .woman {
   display: block;
-  margin-left: -80px;
+  margin-left: -18%;
 }
 
 .box {
   position: absolute;
-  left: 8.5%;
-  z-index: 3;
-  margin-top: 45px;
+  z-index: 4;
+  margin-top: 8.5%;
+  margin-left: -11.6%;
 }
 
-@media (min-width: 375px) {
+@media (max-width: 375px) {
+
+  body {
+    padding-top: 80px;
+  }
+
+  .middle-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-bottom: 50px;
+  }
+
+  .pattern-figure {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+  }
+
+  .pattern {
+    position: relative;
+    bottom: 110px;
+    width: 65%;
+    height: auto;
+    margin: auto;
+  }
+
+  .woman-figure {
+    position: absolute;
+    z-index: 3;
+    top: -95px;
+  }
+
+  .woman {
+    width: 65%;
+    height: auto;
+    margin: auto;
+  }
+
+  .information-container {
+    width: 85%;
+    margin: 110px auto 0 auto;
+    padding: 0;
+  }
+
+  .box {
+    width: 26%;
+    height: auto;
+    display: flex;
+    align-self: center;
+    margin-left: 15%;
+    margin-bottom: 6%;
+  }
+
+  .faq {
+    text-align: center;
+  }
 
 }
