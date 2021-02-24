@@ -1,0 +1,23 @@
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer; /* cambia el estilo del cursor/puntero cuando se coloca encima del elemento */
+  padding: 18px;
+  border: none;
+  text-align: left;
+  outline: none; /* Al presionar (en este caso el elemento subyacente, el cual es un botón), aparece una linea externa de forma predeterminada, outline: none evita que esti suceda  */
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
