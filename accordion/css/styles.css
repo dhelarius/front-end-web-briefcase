@@ -3,6 +3,7 @@
   background-color: #eee;
   color: #444;
   cursor: pointer; /* cambia el estilo del cursor/puntero cuando se coloca encima del elemento */
+  width: 100%;
   padding: 18px;
   border: none;
   text-align: left;
@@ -20,4 +21,16 @@
   display: none;
   background-color: white;
   overflow: hidden;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
