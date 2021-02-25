@@ -10,16 +10,24 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
 }
 
+
+hr {
+  margin: 0;
+  border-style: solid;
+  color: hsl(240, 5%, 91%);
+}
+
+p {
+  margin-top: 0;
+}
+
 .middle-container {
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 70%;
+  background-color: #fff;
+  display: grid;
   height: auto;
   border-radius: 25px;
-  margin: auto;
-  position: absolute;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
   z-index: 1;
 }
 
@@ -28,46 +36,29 @@ body {
   align-items: center;
 }
 
-.information-container {
-  padding: 60px 100px 80px 0;
-  width: 35%;
-  height: auto;
-}
-
-.question {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 15px;
-}
-
-.question h4 {
-  color: hsl(237, 12%, 33%);
-  margin: 0;
-}
-
-.faq {
-  color: hsl(237, 12%, 33%);
-  font-size: 32px;
-  margin-bottom: 30px;
+.woman-figure, .box {
+  position: absolute;
 }
 
 .pattern-figure {
-  position: absolute;
-  z-index: 2;
+  position: relative;
+  left: 0;
   margin: 0;
-  overflow: hidden;
+  width: 100%;
   height: 100%;
+  z-index: 2;
+  overflow: hidden;
 }
 
 .pattern {
   display: block;
-  margin-top: -24%;
-  margin-left: -60%;
+  margin: 0;
+  margin-left: -36rem;
+  margin-top: -18.5rem;
+  margin-bottom: -10rem;
 }
 
 .woman-figure {
-  position: absolute;
   margin: 0;
   overflow: hidden;
   z-index: 3;
@@ -79,68 +70,54 @@ body {
 }
 
 .box {
-  position: absolute;
   z-index: 4;
   margin-left: -8.1rem;
-  margin-top: 5.8rem;
+  margin-top: 3rem;
 }
 
-@media (max-width: 375px) {
+.information-container {
+  padding: 60px 100px 60px 0;
+  width: 22rem;
+  justify-self: end;
+}
 
-  body {
-    padding-top: 80px;
-  }
+.top-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .middle-container {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    padding-bottom: 50px;
-  }
+.faq {
+  color: hsl(237, 12%, 33%);
+  font-size: 32px;
+  margin-bottom: 30px;
+}
 
-  .pattern-figure {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-  }
+.accordion {
+  background: #fff;
+  color: hsl(237, 12%, 33%);
+  cursor: pointer; /* cambia el estilo del cursor/puntero cuando se coloca encima del elemento */
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none; /* Al presionar (en este caso el elemento subyacente, el cual es un botón), aparece una linea externa de forma predeterminada, outline: none evita que esti suceda  */
+  transition: 0.4s;
+}
 
-  .pattern {
-    position: relative;
-    bottom: 110px;
-    width: 65%;
-    height: auto;
-    margin: auto;
-  }
+.accordion:hover {
+  color: hsl(14, 88%, 65%);
+}
 
-  .woman-figure {
-    position: absolute;
-    z-index: 3;
-    top: -95px;
-  }
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  color: hsl(240, 6%, 50%);
+}
 
-  .woman {
-    width: 65%;
-    height: auto;
-    margin: auto;
-  }
-
-  .information-container {
-    width: 85%;
-    margin: 110px auto 0 auto;
-    padding: 0;
-  }
-
-  .box {
-    position: absolute;
-    width: 26%;
-    height: auto;
-    margin-left: 3.2rem;
-    margin-bottom: 4.9rem;
-  }
-
-  .faq {
-    text-align: center;
-  }
-
+.accordion, .panel {
+  padding-left: 0;
 }

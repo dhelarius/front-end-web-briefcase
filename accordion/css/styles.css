@@ -4,6 +4,7 @@
   color: #444;
   cursor: pointer; /* cambia el estilo del cursor/puntero cuando se coloca encima del elemento */
   padding: 18px;
+  width: 100%;
   border: none;
   text-align: left;
   outline: none; /* Al presionar (en este caso el elemento subyacente, el cual es un botón), aparece una linea externa de forma predeterminada, outline: none evita que esti suceda  */
