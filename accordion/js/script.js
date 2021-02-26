@@ -1,5 +1,5 @@
 
-let acc = document.getElementsByClassName('accordion');
+let acc = document.getElementsByClassName("accordion");
 
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
@@ -11,5 +11,4 @@ for (let i = 0; i < acc.length; i++) {
       panel.style.display = "block";
     }
   });
-  console.log(i);
 }
