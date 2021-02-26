@@ -24,7 +24,6 @@ p {
 .middle-container {
   background-color: #fff;
   display: grid;
-  height: auto;
   border-radius: 25px;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 20px;

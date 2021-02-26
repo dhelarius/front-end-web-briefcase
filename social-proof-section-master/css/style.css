@@ -1,0 +1,177 @@
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+color: hsl(228, 45%, 44%);
+}
+
+body {
+    min-height: 100vh;
+}
+
+/*body, .top-container, .bottom-container {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    margin: 5em;
+    padding: 5em;
+}
+
+.top-container {
+    flex-direction: row;
+}
+
+.top-container {
+    justify-content: space-between;
+}
+
+.rates {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.rate {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 20px;
+}
+
+.rate p {
+    margin: 0;
+}
+
+.bottom-container {
+    align-items: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+
+}
+
+.top-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}*/
+
+.container {
+    margin: 5em;
+    padding: 5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.top-container-left {
+    grid-area: 1/1;
+}
+
+.top-container-left h1 {
+    margin-top: 0;
+}
+
+.top-container-right {
+    grid-area: 1/2;
+}
+
+.rates {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.rate {
+    background-color: hsl(300, 24%, 96%);
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.rate p {
+   margin: 0 0 0 40px;
+}
+
+#rate1, #rate2, #rate3 {
+
+}
+
+#rate1 {
+    
+}
+
+#rate2 {
+    
+}
+
+#rate3 {
+   
+}
+
+.stars {
+
+}
+
+.bottom-container {
+    grid-area: 2/1/2/3;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px
+}
+
+.card {
+    background-color: hsl(300, 43%, 22%);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+#card1, #card2, #card3 {
+    position: relative;
+}
+
+#card1 {
+    top: 20px;
+}
+
+#card2 {
+    top: 40px;
+}
+
+#card3 {
+    top: 60px;
+}
+
+.top-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.photo img {
+    border-radius: 50%;
+    width: 45px;
+    height: auto;
+}
+
+.top-card-information {
+    margin-left: 25px;
+}
