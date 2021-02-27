@@ -1,6 +1,6 @@
 
 .attribution {
-    font-size: 11px;
+    font-size: 12px;
     text-align: center;
 }
 
@@ -10,72 +10,25 @@ color: hsl(228, 45%, 44%);
 
 body {
     min-height: 100vh;
-}
-
-/*body, .top-container, .bottom-container {
-    display: flex;
-    justify-content: center;
-}
-
-body {
-    flex-direction: column;
-    align-items: center;
-}
-
-.container {
-    margin: 5em;
-    padding: 5em;
-}
-
-.top-container {
-    flex-direction: row;
-}
-
-.top-container {
-    justify-content: space-between;
-}
-
-.rates {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-.rate {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-column-gap: 20px;
-}
-
-.rate p {
     margin: 0;
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
 }
 
-.bottom-container {
-    align-items: center;
+p {
+    font-weight: 400;
 }
-
-.cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.card {
-
-}
-
-.top-card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}*/
 
 .container {
-    margin: 5em;
-    padding: 5em;
+    margin: 3em 9em 2em 9em;
+    padding: 3em 5em 3em 5em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    position: absolute;
+    z-index: 2;
 }
 
 .top-container-left {
@@ -84,6 +37,16 @@ body {
 
 .top-container-left h1 {
     margin-top: 0;
+    font-weight: 700;
+    font-size: 3.5em;
+    margin-bottom: 5px;
+    color: hsl(300, 43%, 22%);
+}
+
+.top-container-left p {
+    font-size: 1.1em;
+    width: 30em;
+    color: hsl(303, 10%, 53%);
 }
 
 .top-container-right {
@@ -100,12 +63,16 @@ body {
     background-color: hsl(300, 24%, 96%);
     display: flex;
     flex-direction: row;
-    padding: 20px;
+    padding: 18px 20px 18px 20px;
+    width: 28em;
+    border-radius: 8px;
     margin-bottom: 15px;
 }
 
 .rate p {
    margin: 0 0 0 40px;
+   font-weight: 700;
+   color: hsl(300, 43%, 22%);
 }
 
 #rate1, #rate2, #rate3 {
@@ -113,19 +80,17 @@ body {
 }
 
 #rate1 {
-    
+    margin-right: 60px;
 }
 
 #rate2 {
-    
-}
-
-#rate3 {
-   
+    margin-right: 30px;
 }
 
 .stars {
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 6px;
 }
 
 .bottom-container {
@@ -135,13 +100,13 @@ body {
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20px
+    column-gap: 25px
 }
 
 .card {
     background-color: hsl(300, 43%, 22%);
-    padding: 25px;
-    border-radius: 10px;
+    padding: 30px 25px 25px 25px;
+    border-radius: 8px;
 }
 
 #card1, #card2, #card3 {
@@ -174,4 +139,37 @@ body {
 
 .top-card-information {
     margin-left: 25px;
+}
+
+.top-card-information .name, .clasification-card {
+    margin: 0;
+}
+
+.top-card-information .name {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 5px;
+}
+
+.top-card-information p {
+    color: hsl(333, 80%, 67%);
+    font-size: 14px;
+}
+
+.comment-card {
+   color: hsl(303, 10%, 53%)
+}
+
+.pattern-top, .pattern-bottom {
+    position: absolute;
+    z-index: 1;
+}
+
+.pattern-top {
+    top: 0;
+    left: 0;
+}
+
+.pattern-bottom {
+    right: 0;
+    bottom: 0;
 }
