@@ -1,0 +1,79 @@
+
+.rate {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 8px;
+    width: 350px;
+    padding: 15px 25px 15px 25px;
+}
+
+.rate__text {
+    margin: 0 0 0 20px;
+    color: hsl(300, 43%, 22%);
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.rate--vertical {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 285px;
+}
+
+.stars--vertical {
+    margin: 0 0 8px 0;
+}
+
+.rate--mb {
+    margin: 0 0 20px 0;
+}
+
+
+/*------------------------card-------------------------*/
+
+
+.card {
+    background-color: hsl(300, 43%, 22%);
+    width: 275px;
+    border-radius: 8px;
+    height: auto;
+    padding: 35px 30px 35px 30px;
+    font-family: 'Spartan', sans-serif;
+    font-size: 14px;
+}
+
+.card__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card__photo {
+    border-radius: 50px;
+    width: 45px;
+    height: auto;
+}
+
+.card__header-text {
+    margin: 0 0 0 20px;
+}
+
+.card__name {
+    margin: 0 0 5px 0;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.card__ocupation {
+    margin: 0;
+    color: hsl(333, 80%, 67%);
+}
+
+.card__comment {
+    margin: 30px 0 0 0;
+    color: hsl(300, 24%, 96%);
+    line-height: 22px;
+}
