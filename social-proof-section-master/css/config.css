@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+/*===== VARIABLES =====*/
+:root {
+    --br-5r: .5rem;
+}
+
+/*===== LAYOUT =====*/
+:root {
+    --mobil-width: 375px;
+    --desktop-width: 1024px;
+}
+
+/*===== COLORS =====*/
+:root {
+    /* PRIMARY */
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    /* NEUTRAL */
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/*===== FONTS =====*/
+:root {
+    --font-size: .9375rem;
+    --font-family: 'Spartan', sans-serif;
+
+    /* WEIGHTS */
+    --light-weight: 400;
+    --middle-weight: 500;
+    --hard-weight: 700;
+}
+
+/*===== Z-INDEX =====*/
+:root {
+    --zi-1: 10;
+    --zi-2: 100;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
