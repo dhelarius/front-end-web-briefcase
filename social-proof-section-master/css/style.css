@@ -25,6 +25,8 @@ color: hsl(228, 45%, 44%);
 }
 
 .bottom-pattern-mobile {
+    scroll-snap-type: y mandatory;
+    top: calc(100% / .735);
     right: 0;
     bottom: 0;
     

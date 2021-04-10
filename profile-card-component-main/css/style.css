@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/*===== LAYOUT =====*/
+:root {
+  --mobil-width: 375px;
+  --desktop-width: 1440px;
+}
+
+/*===== COLORS =====*/
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturate-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --white: hsl(0,0%,100%);
+}
+
+/*===== FONTS =====*/
+:root {
+  --font-family: 'Kumbh Sans', sans-serif;
+}
+
+/*--- FONT SIZE ---*/
+:root {
+  --small-font-size: .75rem;
+  --middle-font-size: .875rem;
+  --large-font-size: 1.125rem;
+}
+
+/*--- FONT WEIGHT ---*/
+:root {
+  --soft-weight: 400;
+  --hard-weight: 700;
+}
+
+/*===== Z-INDEX =====*/
+:root {
+  --zi-10: 10;
+  --zi-100: 100;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*===== LAYOUT =====*/
+body {
+  background-color: var(--dark-cyan);
+  font-family: var(--font-family);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-size: var(--large-font-size);
+}
+
+/*===== PATTERNS =====*/
+
+/*--- FIGURES ---*/
+
+.figure {
+  position: absolute;
+  z-index: var(--zi-10);
+  width: 50%;
+  height: 420px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.figure--top {
+  top: 0;
+  left: 0;
+}
+
+.figure--bottom {
+  bottom: 0;
+  right: 0;
+}
+
+.figure__img {
+  position: absolute;
+  display: block;
+}
+
+.figure__img--top {
+  bottom: 0;
+  right: 0;
+}
+
+/*===== CARD =====*/
+.card {
+  background-color: var(--white);
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+  border-radius: 1rem;
+  z-index: var(--zi-100);
+}
+
+/*--- TOP IMG ---*/
+.card__background-img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+/*--- CARD BODY ---*/
+.card__body {
+  height: calc(140px * 2);
+}
+
+/*--- CARD-PHOTO AND CARD-IMG ---*/
+.card__photo, .card__img {
+  border-radius: 50%;
+}
+
+/*--- CARD PHOTO AND CARD DATA ---*/
+.card__photo, .card__data {
+  position: relative;
+  top: -60px;
+}
+
+/*--- CARD-PHOTO ---*/
+.card__photo {
+ background-color: var(--white);
+ width: 108px;
+ height: 108px;
+ margin: auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+/*--- CARD IMG ---*/
+.card__img {
+  z-index: var(--zi-100);
+}
+
+/*--- CARD DATA ---*/
+.card__data {
+  margin: 1.20rem 0 1.20rem 0;
+}
+
+/*--- CARD DATA P---*/
+.card__data p {
+  margin: 0;
+}
+
+/*--- CARD NAME ---*/
+.card__name {
+  padding: 0 0 .75rem 0;
+  font-weight: var(--hard-weight);
+  color: var(--very-dark-desaturate-blue);
+}
+
+/*--- CARD AGE ---*/
+.card__age {
+  font-weight: var(--soft-weight);
+  color: var(--dark-grayish-blue);
+}
+
+/*--- CARD ADDRESS ---*/
+.card__address {
+  color: var(--dark-grayish-blue);
+  font-size: var(--middle-font-size);
+}
+
+/*--- HR ---*/
+hr {
+  margin: 0;
+  height: .2rem;
+  border-style: solid none none none;
+  color: var(--dark-gray);
+}
+
+/*===== CARD FOOTER =====*/
+.card__footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.5625rem 0 1.5625rem 0;
+}
+
+/*--- CARD FOOTER DATA ---*/
+.card__footer-data p {
+  margin: 0;
+}
+
+/*--- CARD FOOTER QUANTITY ---*/
+.card__footer-quantity {
+  padding-bottom: .5rem;
+  color: var(--very-dark-desaturate-blue);
+  font-weight: var(--hard-weight);
+}
+
+/*--- CARD FOOTER DESCRIPTION ---*/
+.card__footer-description {
+  color: var(--dark-gray);
+  font-size: var(--small-font-size);
+  letter-spacing: .125rem;
+}
